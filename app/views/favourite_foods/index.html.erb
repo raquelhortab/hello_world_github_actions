@@ -1,0 +1,25 @@
+<h1>Listing favourite_foods</h1>
+
+<table>
+  <tr>
+    <th>Dog</th>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @favourite_foods.each do |favourite_food| %>
+  <tr>
+    <td><%= favourite_food.dog %></td>
+    <td><%= favourite_food.name %></td>
+    <td><%= link_to 'Show', favourite_food %></td>
+    <td><%= link_to 'Edit', edit_favourite_food_path(favourite_food) %></td>
+    <td><%= link_to 'Destroy', favourite_food, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Favourite food', new_favourite_food_path %>

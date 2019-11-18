@@ -1,4 +1,8 @@
 HelloWorld::Application.routes.draw do
+  resources :favourite_foods
+
+  resources :owners
+
   resources :dogs
 
   # The priority is based upon order of creation:
