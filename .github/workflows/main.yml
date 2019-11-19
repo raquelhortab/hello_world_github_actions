@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: /.github/actions/automatic-tests@v1
+    - uses: ./.github/actions/automatic-tests@v1
       name: Test
