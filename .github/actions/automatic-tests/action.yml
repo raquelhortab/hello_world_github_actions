@@ -3,4 +3,4 @@ name: 'Hello World'
 description: 'Run tests'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: '/Dockerfile'
