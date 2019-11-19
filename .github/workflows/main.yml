@@ -9,6 +9,6 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v
-    - uses: actions/automatic-tests@v1
+      uses: raquelhortab/hello_world_github_actions/checkout@v1
+    - uses: raquelhortab/hello_world_github_actions/.github/actions/automatic-tests@v1
       name: Test
