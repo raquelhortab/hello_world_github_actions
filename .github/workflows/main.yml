@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: ./.github/actions/automatic-tests@v1
+    - uses: actions/checkout@master
+      name: Checkout
+    - uses: ./.github/actions/automatic-tests@master
       name: Test
