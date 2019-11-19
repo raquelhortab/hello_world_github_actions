@@ -22,7 +22,7 @@ RUN /bin/bash -l -c "rvm reload && rvm install ruby-1.9.3"
 # Copy the main application.
 RUN mkdir -p /app
 WORKDIR /app
-COPY . ./
+COPY ../../../ ./
 
 # MySQL and MariaDB
 RUN yum -y install initscripts && yum clean all
