@@ -10,5 +10,5 @@ jobs:
     steps:
     - uses: actions/checkout@master
       name: Checkout
-    - uses: ./.github/actions/automatic-tests@master
+    - uses: ../.github/actions/automatic-tests@master
       name: Test
