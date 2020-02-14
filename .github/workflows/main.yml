@@ -13,5 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@master
       name: Checkout
-    - uses: raquelhortab/hello_world_github_actions/.github/actions/automatic-tests@master
+    - uses: ./.github/actions/automatic-tests@master
       name: Test
