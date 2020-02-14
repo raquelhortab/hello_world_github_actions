@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout
       name: Checkout
-    - uses: raquelhortab/hello_world_github_actions/.github/actions/automatic-tests@master
+    - uses: ./.github/actions/automatic-tests@master
       name: Test
