@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@master
       name: Checkout
     - uses: ./.github/actions/automatic-tests
       name: Test
