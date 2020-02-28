@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
+      with:
+        ref: my-other-branch
       name: Checkout
     - uses: ./.github/actions/automatic-tests
       name: Test
