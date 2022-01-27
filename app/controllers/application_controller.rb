@@ -1,4 +1,4 @@
 class ApplicationController < ActionController::Base
-#s some comment  
+#ss some comment  
 protect_from_forgery
 end
