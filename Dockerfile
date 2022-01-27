@@ -42,7 +42,9 @@ RUN /bin/bash -l -c "gem install mysql2 -v '0.4.10'"
 
 RUN /bin/bash -l -c "gem install bundler -v 1.16.2 && bundle install --jobs 20 --retry 5"
 
+RUN cat app/controllers/application_controller.rb
 RUN echo '# some comment' | cat - app/controllers/application_controller.rb > temp && mv temp app/controllers/application_controller.rb 
+RUN cat app/controllers/application_controller.rb
 
 EXPOSE 3000
 
