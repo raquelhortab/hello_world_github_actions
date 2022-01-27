@@ -12,7 +12,8 @@ RUN yum -y install yarn
 RUN yum -y install gcc-c++ patch readline readline-devel zlib zlib-devel
 RUN yum -y install libyaml-devel libffi-devel openssl-devel make
 RUN yum -y install bzip2 autoconf automake libtool bison iconv-devel
-RUN gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+RUN gpg --keyserver keyserver.ubuntu.com --recv-key 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+#RUN gpg2 --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 RUN curl -L get.rvm.io | bash -s stable
 RUN source /etc/profile.d/rvm.sh
 RUN /bin/bash -l -c "echo 'yes' | rvm implode"
